@@ -1,89 +1,141 @@
-local Main = Instance.new("Frame")
+local _5Hub = Instance.new("ScreenGui")
+local Unsupported = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Sidebar = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local _1 = Instance.new("Frame")
-local Sidebar_2 = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
-local UIPadding = Instance.new("UIPadding")
-local _2 = Instance.new("Frame")
 local Holder = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Main = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local Title = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Description = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Discord = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Close = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local shadowHolder = Instance.new("Frame")
 local umbraShadow = Instance.new("ImageLabel")
 local penumbraShadow = Instance.new("ImageLabel")
 local ambientShadow = Instance.new("ImageLabel")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 
-Main.Name = "Main"
-Main.Parent = game.CoreGui
-Main.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.231985807, 0, 0.153934002, 0)
-Main.Size = UDim2.new(0.535842299, 0, 0.690009594, 0)
+_5Hub.Name = "5 Hub"
+_5Hub.Parent = game.CoreGui
+
+Unsupported.Name = "Unsupported"
+Unsupported.Parent = _5Hub
+Unsupported.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Unsupported.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Unsupported.BorderSizePixel = 0
+Unsupported.Position = UDim2.new(0.253491104, 0, 0.236125782, 0)
+Unsupported.Size = UDim2.new(0.469534039, 0, 0.525626063, 0)
 
 UICorner.CornerRadius = UDim.new(0.0199999996, 0)
-UICorner.Parent = Main
-
-Sidebar.Name = "Sidebar"
-Sidebar.Parent = Main
-Sidebar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Sidebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Sidebar.BorderSizePixel = 0
-Sidebar.Position = UDim2.new(-0.000535843777, 0, 0, 0)
-Sidebar.Size = UDim2.new(0.270048887, 0, 1, 0)
-
-UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_2.Parent = Sidebar
-
-_1.Name = "1"
-_1.Parent = Sidebar
-_1.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_1.BorderSizePixel = 0
-_1.Position = UDim2.new(0.904114127, 0, 0.958607197, 0)
-_1.Size = UDim2.new(0.0951500237, 0, 0.0413927734, 0)
-
-Sidebar_2.Name = "Sidebar"
-Sidebar_2.Parent = Sidebar
-Sidebar_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Sidebar_2.BackgroundTransparency = 1.000
-Sidebar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Sidebar_2.BorderSizePixel = 0
-Sidebar_2.Position = UDim2.new(-0.000535865955, 0, -0.00106181414, 0)
-Sidebar_2.Size = UDim2.new(0.999800324, 0, 1.0010618, 0)
-
-UIListLayout.Parent = Sidebar_2
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
-UIPadding.Parent = Sidebar_2
-UIPadding.PaddingLeft = UDim.new(0.0500000007, 0)
-UIPadding.PaddingTop = UDim.new(0.200000003, 0)
-
-_2.Name = "2"
-_2.Parent = Sidebar
-_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_2.BorderSizePixel = 0
-_2.Position = UDim2.new(0.904114187, 0, 7.24254787e-05, 0)
-_2.Size = UDim2.new(0.0951500759, 0, 0.0413927734, 0)
+UICorner.Parent = Unsupported
 
 Holder.Name = "Holder"
-Holder.Parent = Main
+Holder.Parent = Unsupported
 Holder.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Holder.BorderSizePixel = 0
-Holder.Position = UDim2.new(0.299138397, 0, 0.10940069, 0)
-Holder.Size = UDim2.new(0.662557006, 0, 0.849162638, 0)
+Holder.Position = UDim2.new(0.0365966484, 0, 0.10940069, 0)
+Holder.Size = UDim2.new(0.925098717, 0, 0.849162638, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_2.Parent = Holder
+
+Main.Name = "Main"
+Main.Parent = Holder
+Main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.ClipsDescendants = true
+Main.Position = UDim2.new(0, 0, 5.82831561e-08, 0)
+Main.Size = UDim2.new(1.00000012, 0, 0.999999881, 0)
 
 UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_3.Parent = Holder
+UICorner_3.Parent = Main
+
+UIPadding.Parent = Main
+UIPadding.PaddingLeft = UDim.new(0.0299999993, 0)
+UIPadding.PaddingTop = UDim.new(0.0250000004, 0)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.Active = true
+Title.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.0261776838, 0, -0.0269051325, 0)
+Title.Selectable = true
+Title.Size = UDim2.new(1.02586985, 0, 0.137710676, 0)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "WARNING!"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_4.Parent = Title
+
+UITextSizeConstraint.Parent = Title
+UITextSizeConstraint.MaxTextSize = 25
+
+Description.Name = "Description"
+Description.Parent = Main
+Description.Active = true
+Description.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Description.BackgroundTransparency = 1.000
+Description.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Description.BorderSizePixel = 0
+Description.Position = UDim2.new(0.0101308227, 0, 0.272468358, 0)
+Description.Selectable = true
+Description.Size = UDim2.new(0.970808804, 0, 0.136891037, 0)
+Description.Font = Enum.Font.GothamBold
+Description.Text = "This game is not supported by 5 Hub please visit the discord server for information."
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextScaled = true
+Description.TextSize = 14.000
+Description.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = Description
+
+UITextSizeConstraint_2.Parent = Description
+UITextSizeConstraint_2.MaxTextSize = 25
+
+Discord.Name = "Discord"
+Discord.Parent = Main
+Discord.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.0427403674, 0, 0.647579372, 0)
+Discord.Size = UDim2.new(0.887158155, 0, 0.165745705, 0)
+Discord.Font = Enum.Font.GothamBold
+Discord.Text = "Discord Server"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextScaled = true
+Discord.TextSize = 14.000
+Discord.TextWrapped = true
+Discord.MouseButton1Click:Connect(function()
+	setclipboard("https://discord.gg/HxydffF6Bp")
+end)
+
+UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_6.Parent = Discord
+
+UITextSizeConstraint_3.Parent = Discord
+UITextSizeConstraint_3.MaxTextSize = 25
 
 Close.Name = "Close"
-Close.Parent = Main
+Close.Parent = Unsupported
 Close.BackgroundColor3 = Color3.fromRGB(237, 36, 63)
 Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Close.BorderSizePixel = 0
@@ -96,9 +148,12 @@ Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	_5Hub:Destroy()
+end)
 
-UICorner_4.CornerRadius = UDim.new(0.25, 0)
-UICorner_4.Parent = Close
+UICorner_7.CornerRadius = UDim.new(0.25, 0)
+UICorner_7.Parent = Close
 
 shadowHolder.Name = "shadowHolder"
 shadowHolder.Parent = Close
@@ -144,11 +199,13 @@ ambientShadow.ImageTransparency = 0.610
 ambientShadow.ScaleType = Enum.ScaleType.Slice
 ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
 
-UITextSizeConstraint.Parent = Close
-UITextSizeConstraint.MaxTextSize = 25
+UITextSizeConstraint_4.Parent = Close
+UITextSizeConstraint_4.MaxTextSize = 25
 
-local function PYNU_script()
-	local script = Instance.new('LocalScript', Main)
+-- Scripts:
+
+local function YORVCD_script() -- Unsupported.Dragify 
+	local script = Instance.new('LocalScript', Unsupported)
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -190,4 +247,4 @@ local function PYNU_script()
 		end
 	end)
 end
-coroutine.wrap(PYNU_script)()
+coroutine.wrap(YORVCD_script)()
