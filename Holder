@@ -1,0 +1,193 @@
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Sidebar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local _1 = Instance.new("Frame")
+local Sidebar_2 = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local _2 = Instance.new("Frame")
+local Holder = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local penumbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+Main.Name = "Main"
+Main.Parent = game.CoreGui
+Main.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.231985807, 0, 0.153934002, 0)
+Main.Size = UDim2.new(0.535842299, 0, 0.690009594, 0)
+
+UICorner.CornerRadius = UDim.new(0.0199999996, 0)
+UICorner.Parent = Main
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = Main
+Sidebar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Sidebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sidebar.BorderSizePixel = 0
+Sidebar.Position = UDim2.new(-0.000535843777, 0, 0, 0)
+Sidebar.Size = UDim2.new(0.270048887, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_2.Parent = Sidebar
+
+_1.Name = "1"
+_1.Parent = Sidebar
+_1.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0.904114127, 0, 0.958607197, 0)
+_1.Size = UDim2.new(0.0951500237, 0, 0.0413927734, 0)
+
+Sidebar_2.Name = "Sidebar"
+Sidebar_2.Parent = Sidebar
+Sidebar_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Sidebar_2.BackgroundTransparency = 1.000
+Sidebar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sidebar_2.BorderSizePixel = 0
+Sidebar_2.Position = UDim2.new(-0.000535865955, 0, -0.00106181414, 0)
+Sidebar_2.Size = UDim2.new(0.999800324, 0, 1.0010618, 0)
+
+UIListLayout.Parent = Sidebar_2
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIPadding.Parent = Sidebar_2
+UIPadding.PaddingLeft = UDim.new(0.0500000007, 0)
+UIPadding.PaddingTop = UDim.new(0.200000003, 0)
+
+_2.Name = "2"
+_2.Parent = Sidebar
+_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_2.BorderSizePixel = 0
+_2.Position = UDim2.new(0.904114187, 0, 7.24254787e-05, 0)
+_2.Size = UDim2.new(0.0951500759, 0, 0.0413927734, 0)
+
+Holder.Name = "Holder"
+Holder.Parent = Main
+Holder.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.299138397, 0, 0.10940069, 0)
+Holder.Size = UDim2.new(0.662557006, 0, 0.849162638, 0)
+
+UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_3.Parent = Holder
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(237, 36, 63)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.917263031, 0, 0.0300368071, 0)
+Close.Size = UDim2.new(0.0441561118, 0, 0.054468479, 0)
+Close.ZIndex = 2
+Close.Font = Enum.Font.GothamBold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.25, 0)
+UICorner_4.Parent = Close
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = Close
+shadowHolder.BackgroundTransparency = 1.000
+shadowHolder.Size = UDim2.new(1, 0, 1, 0)
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundColor3 = Color3.fromRGB(237, 86, 132)
+umbraShadow.BackgroundTransparency = 1.000
+umbraShadow.Position = UDim2.new(0.498192459, 0, 0.466812193, 6)
+umbraShadow.Size = UDim2.new(0.996385455, 10, 0.947797358, 10)
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.fromRGB(237, 86, 132)
+umbraShadow.ImageTransparency = 0.870
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+penumbraShadow.Name = "penumbraShadow"
+penumbraShadow.Parent = shadowHolder
+penumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+penumbraShadow.BackgroundColor3 = Color3.fromRGB(237, 86, 132)
+penumbraShadow.BackgroundTransparency = 1.000
+penumbraShadow.Position = UDim2.new(0.498192459, 0, 0.466812193, 6)
+penumbraShadow.Size = UDim2.new(0.996385455, 10, 0.947797358, 10)
+penumbraShadow.Image = "rbxassetid://1316045217"
+penumbraShadow.ImageColor3 = Color3.fromRGB(237, 86, 132)
+penumbraShadow.ImageTransparency = 0.870
+penumbraShadow.ScaleType = Enum.ScaleType.Slice
+penumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowHolder
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundColor3 = Color3.fromRGB(237, 86, 132)
+ambientShadow.BackgroundTransparency = 1.000
+ambientShadow.Position = UDim2.new(0.50767684, 0, 0.338204741, 6)
+ambientShadow.Size = UDim2.new(1.01534665, 10, 0.911957085, 10)
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.fromRGB(237, 86, 132)
+ambientShadow.ImageTransparency = 0.610
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UITextSizeConstraint.Parent = Close
+UITextSizeConstraint.MaxTextSize = 25
+
+local function PYNU_script()
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(PYNU_script)()
