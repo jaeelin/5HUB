@@ -36,7 +36,7 @@ if game.CoreGui:FindFirstChild("Test") then
 end
 
 Test.Name = "Test"
-Test.Parent = game.CoreGui
+Test.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Test.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -44,8 +44,8 @@ Main.Parent = Test
 Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.297305465, 0, 0.242285714, 0)
-Main.Size = UDim2.new(0, 450, 0, 450)
+Main.Position = UDim2.new(0.311045051, 0, 0.242285714, 0)
+Main.Size = UDim2.new(0.330000013, 0, 0.513999999, 0)
 
 Misc.Name = "Misc"
 Misc.Parent = Main
