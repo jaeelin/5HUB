@@ -1,0 +1,237 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local Test = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Misc = Instance.new("Folder")
+local Frame = Instance.new("Frame")
+local UIStroke = Instance.new("UIStroke")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local penumbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Sidebar = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local Title_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Main_2 = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UICorner = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Player = Instance.new("TextButton")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Credits = Instance.new("TextButton")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+
+if game.CoreGui:FindFirstChild("Test") then
+	game.CoreGui:FindFirstChild("Test"):Destroy()
+end
+
+Test.Name = "Test"
+Test.Parent = game.CoreGui
+Test.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Test
+Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.297305465, 0, 0.242285714, 0)
+Main.Size = UDim2.new(0, 450, 0, 450)
+
+Misc.Name = "Misc"
+Misc.Parent = Main
+
+Frame.Parent = Misc
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.111111112, 0)
+Frame.Size = UDim2.new(0, 450, 0, 1)
+
+UIStroke.Parent = Main
+UIStroke.Color = Color3.fromRGB(227, 171, 255)
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = Main
+shadowHolder.BackgroundTransparency = 1.000
+shadowHolder.Size = UDim2.new(1, 0, 1, 0)
+shadowHolder.ZIndex = 0
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundTransparency = 1.000
+umbraShadow.Position = UDim2.new(0.5, 0, 0.5, 2)
+umbraShadow.Size = UDim2.new(1, 4, 1, 4)
+umbraShadow.ZIndex = 0
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+umbraShadow.ImageTransparency = 0.860
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+penumbraShadow.Name = "penumbraShadow"
+penumbraShadow.Parent = shadowHolder
+penumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+penumbraShadow.BackgroundTransparency = 1.000
+penumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 2)
+penumbraShadow.Size = UDim2.new(1, 4, 1, 4)
+penumbraShadow.ZIndex = 0
+penumbraShadow.Image = "rbxassetid://1316045217"
+penumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+penumbraShadow.ImageTransparency = 0.880
+penumbraShadow.ScaleType = Enum.ScaleType.Slice
+penumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowHolder
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundTransparency = 1.000
+ambientShadow.Position = UDim2.new(0.5, 0, 0.5, 2)
+ambientShadow.Size = UDim2.new(1, 4, 1, 4)
+ambientShadow.ZIndex = 0
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ambientShadow.ImageTransparency = 0.880
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0259817168, 0, 0.028571438, 0)
+Title.Size = UDim2.new(0.728663445, 0, 0.0587301552, 0)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "spook hub - game"
+Title.TextColor3 = Color3.fromRGB(200, 200, 200)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint.Parent = Title
+UITextSizeConstraint.MaxTextSize = 20
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = Main
+Sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sidebar.BackgroundTransparency = 1.000
+Sidebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sidebar.BorderSizePixel = 0
+Sidebar.Position = UDim2.new(0, 0, 0.141904697, 0)
+Sidebar.Size = UDim2.new(0.29107368, 0, 0.858095288, 0)
+
+UIListLayout.Parent = Sidebar
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0149999997, 0)
+
+UIPadding.Parent = Sidebar
+UIPadding.PaddingTop = UDim.new(0.0199999996, 0)
+
+Title_2.Name = "Title"
+Title_2.Parent = Sidebar
+Title_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.089261882, 0, -4.78828071e-08, 0)
+Title_2.Size = UDim2.new(0.78426981, 0, 0.0587301515, 0)
+Title_2.Font = Enum.Font.GothamBold
+Title_2.Text = "Main"
+Title_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_2.Parent = Title_2
+UITextSizeConstraint_2.MaxTextSize = 15
+
+Main_2.Name = "Main"
+Main_2.Parent = Sidebar
+Main_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Main_2.BackgroundTransparency = 1.000
+Main_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.126468301, 0, 0.0737301186, 0)
+Main_2.Size = UDim2.new(0.830647111, 0, 0.066627562, 0)
+Main_2.Font = Enum.Font.GothamBold
+Main_2.Text = "Farming"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextScaled = true
+Main_2.TextSize = 14.000
+Main_2.TextWrapped = true
+Main_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_3.Parent = Main_2
+UITextSizeConstraint_3.MaxTextSize = 20
+
+UICorner.CornerRadius = UDim.new(0.200000003, 0)
+UICorner.Parent = Main_2
+
+UITextSizeConstraint_4.Parent = Main_2
+UITextSizeConstraint_4.MaxTextSize = 20
+
+Player.Name = "Player"
+Player.Parent = Sidebar
+Player.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Player.BackgroundTransparency = 1.000
+Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0.126468301, 0, 0.155357659, 0)
+Player.Size = UDim2.new(0.830647111, 0, 0.066627562, 0)
+Player.Font = Enum.Font.GothamBold
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+Player.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_5.Parent = Player
+UITextSizeConstraint_5.MaxTextSize = 20
+
+UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_2.Parent = Player
+
+UITextSizeConstraint_6.Parent = Player
+UITextSizeConstraint_6.MaxTextSize = 20
+
+Credits.Name = "Credits"
+Credits.Parent = Sidebar
+Credits.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.126468301, 0, 0.236985296, 0)
+Credits.Size = UDim2.new(0.830647111, 0, 0.0666275397, 0)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+Credits.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_7.Parent = Credits
+UITextSizeConstraint_7.MaxTextSize = 20
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = Credits
+
+UITextSizeConstraint_8.Parent = Credits
+UITextSizeConstraint_8.MaxTextSize = 20
